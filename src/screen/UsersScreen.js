@@ -13,6 +13,7 @@ const UsersScreen = () => {
         try {
             const response = await axios.get('https://fake-json-api.mock.beeceptor.com/users')
             setUsers(response.data)
+            console.log(response.data);
         } catch (error) {
             console.log("حدث خطأ:", error)
         }
